@@ -49,9 +49,9 @@ public class CompraController {
         return ResponseEntity.created(uri).body(new DadosDetalhamentoCompra(compra));
     }
 
-    @GetMapping
-    public ResponseEntity listarComprasPeloCPF(@RequestBody @Valid DadosListarCompras dados){
-        var compras = repository.listarComprasPeloCPF(dados.CPF());
+    @GetMapping("/{cpf}")
+    public ResponseEntity listarComprasPeloCPF(@PathVariable String cpf){
+        var compras = repository.listarComprasPeloCPF(cpf);
         return ResponseEntity.ok(compras);
     }
 }
