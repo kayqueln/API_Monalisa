@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, String> {
     List<Usuario> findAllByAtivoTrue();
+
+    Usuario findByCPF(String CPF);
 }

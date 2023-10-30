@@ -4,6 +4,7 @@ import br.com.kayCompany.Monalisa.domain.compra.*;
 import br.com.kayCompany.Monalisa.domain.conta.ContaRepository;
 import br.com.kayCompany.Monalisa.domain.fatura.FaturaRepository;
 import br.com.kayCompany.Monalisa.uteis.Uteis;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.Date;
 
 
 @RestController
+@Tag(name = "Compra")
 @RequestMapping("/compra")
 public class CompraController {
 

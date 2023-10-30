@@ -3,6 +3,7 @@ package br.com.kayCompany.Monalisa.controller;
 
 import br.com.kayCompany.Monalisa.domain.fatura.*;
 import br.com.kayCompany.Monalisa.uteis.Uteis;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 
 @RestController
+@Tag(name = "Fatura")
 @RequestMapping("/fatura")
 public class FaturaController {
 

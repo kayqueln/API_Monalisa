@@ -3,6 +3,7 @@ package br.com.kayCompany.Monalisa.controller;
 import br.com.kayCompany.Monalisa.domain.conta.ContaRepository;
 import br.com.kayCompany.Monalisa.domain.conta.DadosConsultaConta;
 import br.com.kayCompany.Monalisa.domain.usuario.UsuarioRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@Tag(name = "Conta")
 @RequestMapping("/conta")
 public class ContaController {
 
