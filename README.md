@@ -1,5 +1,5 @@
 # Backend Monalisa
-API em Java com Spring Boot de um banco digital chamado "Monalisa"
+API em Java com Spring Boot que representa o banco digital "Monalisa"
 
 <hr>
 
