@@ -3,12 +3,24 @@ API em Java de um banco digital chamado "Monalisa"
 
 ==================================================
 Endoints expostos: 
-Usuario(Get, Put, Post, Delete)
-Fatura (Get, Put, Get)
-Compra (Post, Get)
-Health (Get)
-Login (Post)
-Conta(Get)
+- Usuario
+  - Get
+  - Put
+  - Post
+  - Delete
+- Fatura
+  - Get
+  - Put
+  - Get
+- Compra
+  - Post
+  - Get
+- Health
+  - Get
+- Login
+  - Post
+- Conta
+  - Get
 
 ==================================================
 Tecnologias usadas:
