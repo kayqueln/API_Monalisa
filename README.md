@@ -50,12 +50,15 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 <hr>
 
 <h2>Tecnologias usadas:</h2>
-- Java<br>
-- Spring Boot<br>
-- JPA<br>
-- SQL<br>
-- H2 (ambiente de dev)<br>
-- MySql (ambiente de produção)<br>
-- Spring Security<br>
-- JWT<br>
+<ul>
+<li>Java</li>
+<li>Spring Boot</li>
+<li>JPA</li>
+<li>Hibernate</li>
+<li>SQL</li>
+<li>H2 (ambiente de dev)</li>
+<li>MySql (ambiente de produção)</li>
+<li>Spring Security</li>
+<li>JWT</li>
+</ul>
 
