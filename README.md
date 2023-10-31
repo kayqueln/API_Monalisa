@@ -30,6 +30,7 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 - Spring Boot<br>
 - JPA<br>
 - SQL<br>
-- H2 (no ambiente de Dev)<br>
+- H2 (ambiente de dev)<br>
+- MySql (ambiente de produção)<br>
 - Spring Security<br>
 - JWT<br>
