@@ -30,3 +30,4 @@ Tecnologias usadas:
 - Draw.io
 - SQL
 - H2 (no ambiente de Dev)
+- Spring Security
