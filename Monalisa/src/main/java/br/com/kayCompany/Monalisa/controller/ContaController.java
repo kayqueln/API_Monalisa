@@ -1,8 +1,7 @@
 package br.com.kayCompany.Monalisa.controller;
 
-import br.com.kayCompany.Monalisa.domain.conta.ContaRepository;
-import br.com.kayCompany.Monalisa.domain.conta.DadosConsultaConta;
-import br.com.kayCompany.Monalisa.domain.usuario.UsuarioRepository;
+import br.com.kayCompany.Monalisa.repository.ContaRepository;
+import br.com.kayCompany.Monalisa.dtos.conta.DadosConsultaConta;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

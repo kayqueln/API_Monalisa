@@ -1,12 +1,15 @@
 package br.com.kayCompany.Monalisa.uteis;
 
-import br.com.kayCompany.Monalisa.domain.compra.CompraRepository;
-import br.com.kayCompany.Monalisa.domain.compra.DadosRealizarCompra;
-import br.com.kayCompany.Monalisa.domain.conta.Conta;
-import br.com.kayCompany.Monalisa.domain.conta.ContaRepository;
-import br.com.kayCompany.Monalisa.domain.fatura.*;
-import br.com.kayCompany.Monalisa.domain.usuario.Usuario;
-import br.com.kayCompany.Monalisa.domain.usuario.UsuarioRepository;
+import br.com.kayCompany.Monalisa.domain.Fatura;
+import br.com.kayCompany.Monalisa.dtos.fatura.DadosConsultaFatura;
+import br.com.kayCompany.Monalisa.dtos.fatura.DadosInnerJoinFatura;
+import br.com.kayCompany.Monalisa.repository.CompraRepository;
+import br.com.kayCompany.Monalisa.dtos.compra.DadosRealizarCompra;
+import br.com.kayCompany.Monalisa.domain.Conta;
+import br.com.kayCompany.Monalisa.repository.ContaRepository;
+import br.com.kayCompany.Monalisa.domain.Usuario;
+import br.com.kayCompany.Monalisa.repository.UsuarioRepository;
+import br.com.kayCompany.Monalisa.repository.FaturaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -59,15 +62,15 @@ public class Uteis {
         if(idFatura == null){
             var idCompra = compraRepository.consultarCompraPeloCPF(dados.CPF());
             var compra = compraRepository.getReferenceById(idCompra);
-            Fatura fatura = new Fatura(null, dados.valor(), Status.ABERTA, LocalDate.now().plusMonths(1) ,compra);
+            Fatura fatura = new Fatura(null, dados.valor(), StatusFatura.ABERTA, LocalDate.now().plusMonths(1) ,compra);
             faturaRepository.save(fatura);
         } else {
             var consultaFatura = faturaRepository.getReferenceById(idFatura);
 
-            if(consultaFatura.getStatus() == Status.PAGA) {
+            if(consultaFatura.getStatusFatura() == StatusFatura.PAGA) {
                 var idCompra = compraRepository.consultarCompraPeloCPF(dados.CPF());
                 var compra = compraRepository.getReferenceById(idCompra);
-                Fatura fatura = new Fatura(null, dados.valor(), Status.ABERTA, LocalDate.now().plusMonths(1) ,compra);
+                Fatura fatura = new Fatura(null, dados.valor(), StatusFatura.ABERTA, LocalDate.now().plusMonths(1) ,compra);
                 faturaRepository.save(fatura);
             } else {
                 var fatura = faturaRepository.getReferenceById(idFatura);
@@ -95,12 +98,12 @@ public class Uteis {
         for (DadosInnerJoinFatura fatura : faturas ) {
             var consultaDetalhada = faturaRepository.getReferenceById(fatura.id());
 
-            if (consultaDetalhada.getStatus() != Status.PAGA) {
+            if (consultaDetalhada.getStatusFatura() != StatusFatura.PAGA) {
                 if (LocalDate.now().isAfter(consultaDetalhada.getVencimento())) {
-                    consultaDetalhada.setStatus(Status.ATRASADA);
+                    consultaDetalhada.setStatusFatura(StatusFatura.ATRASADA);
                     faturaRepository.save(consultaDetalhada);
                 } else {
-                    consultaDetalhada.setStatus(Status.ABERTA);
+                    consultaDetalhada.setStatusFatura(StatusFatura.ABERTA);
                     faturaRepository.save(consultaDetalhada);
                 }
             }

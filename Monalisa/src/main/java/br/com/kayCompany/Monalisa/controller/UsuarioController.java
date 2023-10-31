@@ -1,7 +1,12 @@
 package br.com.kayCompany.Monalisa.controller;
 
-import br.com.kayCompany.Monalisa.domain.conta.ContaRepository;
-import br.com.kayCompany.Monalisa.domain.usuario.*;
+import br.com.kayCompany.Monalisa.domain.Usuario;
+import br.com.kayCompany.Monalisa.dtos.usuario.DadosAtualizacaoUsuario;
+import br.com.kayCompany.Monalisa.dtos.usuario.DadosCadastroUsuario;
+import br.com.kayCompany.Monalisa.dtos.usuario.DadosDetalhamentoUsuario;
+import br.com.kayCompany.Monalisa.dtos.usuario.DadosExclusaoUsuario;
+import br.com.kayCompany.Monalisa.repository.ContaRepository;
+import br.com.kayCompany.Monalisa.repository.UsuarioRepository;
 import br.com.kayCompany.Monalisa.uteis.Uteis;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

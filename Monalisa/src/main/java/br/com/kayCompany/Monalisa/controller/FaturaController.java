@@ -1,7 +1,11 @@
 package br.com.kayCompany.Monalisa.controller;
 
 
-import br.com.kayCompany.Monalisa.domain.fatura.*;
+import br.com.kayCompany.Monalisa.dtos.fatura.DadosConsultaFatura;
+import br.com.kayCompany.Monalisa.dtos.fatura.DadosDetalhamentoFatura;
+import br.com.kayCompany.Monalisa.dtos.fatura.DadosPagamentoFatura;
+import br.com.kayCompany.Monalisa.repository.FaturaRepository;
+import br.com.kayCompany.Monalisa.uteis.StatusFatura;
 import br.com.kayCompany.Monalisa.uteis.Uteis;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -9,8 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDate;
 
 @RestController
 @Tag(name = "Fatura")
@@ -45,7 +47,7 @@ public class FaturaController {
     public ResponseEntity pagarFatura(@RequestBody @Valid DadosPagamentoFatura dados){
         var fatura = repository.getReferenceById(dados.id_fatura());
 
-        if (fatura.getStatus() != Status.PAGA) {
+        if (fatura.getStatusFatura() != StatusFatura.PAGA) {
             if (uteis.validarSenha(dados.CPF(), dados.senha())) {
                 fatura.pagarFatura();
                 return ResponseEntity.ok(new DadosDetalhamentoFatura(fatura));
