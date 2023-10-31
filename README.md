@@ -47,6 +47,7 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 
 <h2>Rotas liberadas pelo Spring Security:</h2>
 <ul>
+<li>/</li>
 <li>/login (método Post)</li>
 <li>/v3/api-docs/**</li>
 <li>/swagger-ui.html</li>
