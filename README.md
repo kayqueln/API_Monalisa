@@ -10,23 +10,23 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 <hr>
 
 <h2>Endoints da API:</h2> 
-- Usuario<br>
+- Usuario
   <p>- Get<br>
   - Put<br>
   - Post<br>
   - Delete</p><br>
-- Fatura<br>
+- Fatura
   <p>- Get<br>
   - Put<br>
   - Gete</p><br>
-- Compra<br>
+- Compra
   <p>- Post<br>
   - Get</p><br>
-- Health<br>
+- Health
   <p>- Get</p><br>
-- Login<br>
+- Login
   <p>- Post</p><br>
-- Conta<br>
+- Conta
   <p>- Get</p>
 
 <hr>
@@ -58,6 +58,4 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 - MySql (ambiente de produção)<br>
 - Spring Security<br>
 - JWT<br>
-
-<hr>
 
