@@ -5,23 +5,23 @@ API em Java com Spring Boot de um banco digital chamado "Monalisa"
 
 <h2>Endoints da API:</h2> 
 - Usuario<br>
-  - Get<br>
+  <p>- Get<br>
   - Put<br>
   - Post<br>
-  - Delete<br>
+  - Delete</p><br>
 - Fatura<br>
-  - Get<br>
+  <p>- Get<br>
   - Put<br>
-  - Get<br>
+  - Gete</p><br>
 - Compra<br>
-  - Post<br>
-  - Get<br>
+  <p>- Post<br>
+  - Get</p><br>
 - Health<br>
-  - Get<br>
+  <p>- Get</p><br>
 - Login<br>
-  - Post<br>
+  <p>- Post</p><br>
 - Conta<br>
-  - Get<br>
+  <p>- Get</p><br>
 
 <hr>
 
