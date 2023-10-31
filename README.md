@@ -12,23 +12,23 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 <h2>Endoints da API:</h2> 
 <ul>
 <li>Usuario
-  <p>- Get<br>
+  - Get<br>
   - Put<br>
   - Post<br>
-  - Delete</p></li>
+  - Delete</li>
 <li>Fatura
-  <p>- Get<br>
+  - Get<br>
   - Put<br>
-  - Gete</p></li>
+  - Gete</li>
 <li>Compra
-  <p>- Post<br>
-  - Get</p></li>
+  - Post<br>
+  - Get</li>
 <li>Health
-  <p>- Get</p></li>
+  - Get</li>
 <li>Login
-  <p>- Post</p></li>
+  - Post</li>
 <li>Conta
-  <p>- Get</p></li>
+  - Get</li>
 </ul>
 
 <hr>
