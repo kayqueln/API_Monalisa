@@ -1,7 +1,7 @@
 # API_Monalisa
 API em Java de um banco digital chamado "Monalisa"
 
-==================================================
+================================================== <br/>
 Endoints expostos: 
 - Usuario
   - Get
@@ -22,7 +22,7 @@ Endoints expostos:
 - Conta
   - Get
 
-==================================================
+================================================== <br/>
 Tecnologias usadas:
 - Java
 - Spring Boot
