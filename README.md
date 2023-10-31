@@ -1,8 +1,9 @@
-# API_Monalisa
-API em Java de um banco digital chamado "Monalisa"
+# Backend Monalisa
+API em Java com Spring Boot de um banco digital chamado "Monalisa"
 
-================================================== <br/>
-Endoints expostos: 
+<hr>
+
+<h2>Endoints da API:</h2> 
 - Usuario
   - Get
   - Put
@@ -22,12 +23,13 @@ Endoints expostos:
 - Conta
   - Get
 
-================================================== <br/>
-Tecnologias usadas:
+<hr>
+
+<h2>Tecnologias usadas:</h2>
 - Java
 - Spring Boot
 - JPA
-- Draw.io
 - SQL
 - H2 (no ambiente de Dev)
 - Spring Security
+- JWT
