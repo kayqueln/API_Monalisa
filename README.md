@@ -32,22 +32,23 @@ API em Java com Spring Boot que representa o banco digital "Monalisa"
 <hr>
 
 <h2>Rotas HTTP: (http://contexto)</h2>
-- /health
-- /compra
-- /conta
-- /fatura
-- /login
-- /usuario
+- /health<br>
+- /compra<br>
+- /conta<br>
+- /fatura<br>
+- /login<br>
+- /usuario<br>
 
 <hr>
 
 <h2>Rotas liberadas pelo Spring Security:</h2>
-- /login (método Post)
-- /v3/api-docs/**
-- /swagger-ui.html
-- /swagger-ui/**
+- /login (método Post)<br>
+- /v3/api-docs/**<br>
+- /swagger-ui.html<br>
+- /swagger-ui/**<br>
 
 <hr>
+
 
 <h2>Tecnologias usadas:</h2>
 <ul>
