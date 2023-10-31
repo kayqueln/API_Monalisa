@@ -21,7 +21,7 @@ API em Java com Spring Boot de um banco digital chamado "Monalisa"
 - Login<br>
   <p>- Post</p><br>
 - Conta<br>
-  <p>- Get</p><br>
+  <p>- Get</p>
 
 <hr>
 
